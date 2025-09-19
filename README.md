@@ -100,15 +100,25 @@ Home Page:
 
 <img width="959" height="437" alt="homepage" src="https://github.com/user-attachments/assets/433ac9e8-8d57-4507-b654-06cb0bb5fdb6" />
 
+
+
+
 Login Page:
 
 <img width="959" height="426" alt="loginpage" src="https://github.com/user-attachments/assets/b53f9b22-ba6d-4cef-be36-73be18b46d12" />
+
+
+
 
 Project dashboard:
 
 <img width="959" height="427" alt="projects_dashboard" src="https://github.com/user-attachments/assets/9f8ec128-b28c-4721-b283-36a7f5276966" />
 
+
+
 Task detail:
 
 <img width="959" height="428" alt="task_details" src="https://github.com/user-attachments/assets/b556d46f-e8f5-4f8c-82a7-1bd9b32fda80" />
+
+
 
