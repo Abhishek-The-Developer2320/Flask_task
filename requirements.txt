@@ -5,4 +5,4 @@ Flask-Migrate
 Flask-Login
 psycopg2-binary
 python-dotenv
-gunicorn==21.2.0
+gunicorn
