@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<div class="bg-light py-5">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold text-primary">Welcome to ProjectsApp</h1>
+    <p class="lead text-muted mb-4">Organize your projects, track tasks, and stay productive.</p>
+
+    <div class="d-flex justify-content-center gap-3">
+      <a href="{{ url_for('users.login') }}" class="btn btn-lg btn-primary shadow-sm px-4">
+        <i class="bi bi-box-arrow-in-right me-2"></i> Login
+      </a>
+      <a href="{{ url_for('users.register') }}" class="btn btn-lg btn-success shadow-sm px-4">
+        <i class="bi bi-person-plus me-2"></i> Register
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <i class="bi bi-kanban display-5 text-primary mb-3"></i>
+          <h5 class="card-title">Manage Projects</h5>
+          <p class="card-text text-muted">Create, edit, and track your projects seamlessly.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <i class="bi bi-check2-square display-5 text-success mb-3"></i>
+          <h5 class="card-title">Track Tasks</h5>
+          <p class="card-text text-muted">Stay on top of your tasks with deadlines and progress tracking.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <i class="bi bi-people display-5 text-warning mb-3"></i>
+          <h5 class="card-title">Collaborate</h5>
+          <p class="card-text text-muted">Work with your team and achieve goals together.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

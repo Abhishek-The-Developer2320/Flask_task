@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Tasks for {{ project.title }}</h2>
+<a class="btn btn-primary mb-3" href="{{ url_for('tasks.create_task', project_id=project.id) }}">Add Task</a>
+
+<ul class="list-group">
+  {% for task in tasks %}
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      <div>
+        <strong>{{ task.title }}</strong> - {% if task.is_done %}Done{% else %}Pending{% endif %}
+      </div>
+      <form action="{{ url_for('tasks.toggle_task', task_id=task.id) }}" method="post">
+        <button type="submit" class="btn btn-sm {% if task.is_done %}btn-warning{% else %}btn-success{% endif %}">
+          {% if task.is_done %}Mark as Pending{% else %}Mark as Done{% endif %}
+        </button>
+      </form>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}
